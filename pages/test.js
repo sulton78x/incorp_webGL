@@ -1,0 +1,5 @@
+var dotGeometry = new THREE.Geometry()
+dotGeometry.vertices.push(new THREE.Vector3(0, 0, 0))
+var dotMaterial = new THREE.PointsMaterial({ size: 1, sizeAttenuation: false })
+var dot = new THREE.Points(dotGeometry, dotMaterial)
+scene.add(dot)
